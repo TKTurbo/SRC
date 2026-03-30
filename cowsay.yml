@@ -1,5 +1,6 @@
----
-- hosts: 127.0.0.1
-  become: yes
-  tasks:
-    - apt: { name: cowsay, state: present, update_cache: yes }
+- name: install cowsay
+  apt:
+    name:
+      - cowsay
+    state: present
+    update_cache: true
