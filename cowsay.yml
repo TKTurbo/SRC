@@ -1,4 +1,5 @@
-- name: install cowsay
-  ansible.builtin.apt:
-    name: cowsay
-    state: present
+tasks:
+  - name: install cowsay
+    apt:
+      name: cowsay
+      state: present
