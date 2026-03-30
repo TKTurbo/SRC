@@ -1,5 +1,9 @@
-tasks:
-  - name: install cowsay
-    apt:
-      name: cowsay
-      state: present
+- name: Research Cloud Cowsay Plugin
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: install cowsay
+      apt:
+        name: cowsay
+        state: present
