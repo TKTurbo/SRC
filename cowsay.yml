@@ -1,7 +1,5 @@
 ---
-  - hosts: 127.0.0.1
-    tasks:
-      - name: install cowsay
-        yum:
-          name: cowsay
-          state: latest
+- hosts: 127.0.0.1
+  become: yes
+  tasks:
+    - apt: { name: cowsay, state: present, update_cache: yes }
