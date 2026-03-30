@@ -1,6 +1,4 @@
 - name: install cowsay
-  apt:
-    name:
-      - cowsay
+  ansible.builtin.apt:
+    name: cowsay
     state: present
-    update_cache: true
