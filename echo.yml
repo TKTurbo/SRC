@@ -1,5 +1,6 @@
 - name: Test Echo
   hosts: localhost
+  connection: local
 
   tasks:
     - name: install cowsay
