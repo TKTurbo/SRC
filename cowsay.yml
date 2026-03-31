@@ -1,5 +1,5 @@
 - name: Research Cloud Cowsay Plugin
-  hosts: all
+  hosts: localhost
   become: yes
   tasks:
     - name: install cowsay
