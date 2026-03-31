@@ -4,4 +4,4 @@
 
   tasks:
     - name: install cowsay
-      bash: echo "TEST TEST TEST" && touch testtest.txt
+      shell: echo "TEST TEST TEST" && touch testtest.txt
