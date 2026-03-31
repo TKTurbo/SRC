@@ -6,3 +6,4 @@
       apt:
         name: cowsay
         state: present
+        update_cache: yes
