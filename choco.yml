@@ -1,0 +1,13 @@
+- name: Research Cloud Cowsay Plugin
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Ensure Chocolatey installed from internal repo
+      win_chocolatey:
+        name: chocolatey
+        state: present
+        source: http://internal/odata/repo/ChocolateyInstall.ps1
+    - name: install chrome
+      chocolatey.chocolatey.win_chocolatey:
+        name: googlechrome
+        state: present
